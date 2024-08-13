@@ -1,14 +1,9 @@
-import DateSelector from '@/app/_components/DateSelector';
-import ReservationForm from '@/app/_components/ReservationForm';
+import Reservation from '@/app/_components/Reservation';
+import Spinner from '@/app/_components/Spinner';
 import TextExpander from '@/app/_components/TextExpander';
-import {
-	getBookedDatesByCabinId,
-	getCabin,
-	getCabins,
-	getSettings,
-} from '@/app/_lib/data-service';
+import { getCabin, getCabins } from '@/app/_lib/data-service';
 import { EyeSlashIcon, MapPinIcon, UsersIcon } from '@heroicons/react/24/solid';
-import Image from 'next/image';
+import { Suspense } from 'react';
 
 export async function generateMetadata({ params }) {
 	const { name } = await getCabin(params.cabinId);
@@ -18,8 +13,6 @@ export async function generateMetadata({ params }) {
 
 export async function generateStaticParams() {
 	const cabins = await getCabins();
-	// const setting = await getSettings();
-	// const bookedDates = await getBookedDatesByCabinId(params.cabinId);
 
 	if (!cabins) {
 		throw new Error('No cabins data returned');
@@ -86,9 +79,14 @@ const Page = async ({ params }) => {
 
 			<div>
 				<h2 className="text-5xl font-semibold text-center mb-10 text-accent-400">
-					Reserve {name} today. Pay on arrival.
+					Reserve
+					<span className="text-accent-50 mx-3">{name}</span>
+					today. Pay on arrival.
 				</h2>
-				<ReservationForm />
+
+				<Suspense fallback={<Spinner />}>
+					<Reservation cabin={cabin} />
+				</Suspense>
 			</div>
 		</div>
 	);
