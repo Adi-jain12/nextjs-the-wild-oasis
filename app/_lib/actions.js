@@ -109,7 +109,7 @@ export async function updateReservation(formData) {
 }
 
 export const signInAction = async () => {
-	await signIn('google', { redirectTo: '/account' });
+	await signIn('google', { redirectTo: '/' });
 };
 
 export const signOutAction = async () => {

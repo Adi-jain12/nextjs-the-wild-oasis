@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { auth } from '../_lib/auth';
+import ProfileDropdown from './ProfileDropdown';
 
 const Navigation = async () => {
 	const session = await auth();
@@ -23,28 +24,20 @@ const Navigation = async () => {
 						About
 					</Link>
 				</li>
-				<li>
-					{session?.user?.image ? (
+
+				{session?.user && (
+					<li>
 						<Link
 							href="/account"
 							className="hover:text-accent-400 transition-colors flex items-center gap-4"
 						>
-							<img
-								className="h-8 rounded-full"
-								src={session.user.image}
-								alt={session.user.name}
-								referrerPolicy="no-referrer"
-							/>
 							<span>Guest area</span>
 						</Link>
-					) : (
-						<Link
-							href="/account"
-							className="hover:text-accent-400 transition-colors"
-						>
-							Guest area
-						</Link>
-					)}
+					</li>
+				)}
+
+				<li>
+					<ProfileDropdown session={session} />
 				</li>
 			</ul>
 		</nav>

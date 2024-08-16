@@ -21,7 +21,7 @@ function isAlreadyBooked(range, datesArr) {
 }
 
 function DateSelector({ settings, cabin, bookedDates }) {
-	const { range, setRange, resetRange } = useReservation();
+	const { range, handleSetRange, resetRange } = useReservation();
 
 	const displayRange = isAlreadyBooked(range, bookedDates) ? {} : range;
 
@@ -37,9 +37,19 @@ function DateSelector({ settings, cabin, bookedDates }) {
 			<DayPicker
 				className="rdp pt-8 place-self-center"
 				mode="range"
-				onSelect={setRange}
+				onSelect={(range) => {
+					if (
+						range &&
+						range.from &&
+						range.to &&
+						isSameDay(range.from, range.to)
+					) {
+						return;
+					}
+					handleSetRange(range);
+				}}
 				selected={displayRange}
-				min={minBookingLength + 1}
+				min={minBookingLength - 1}
 				max={maxBookingLength}
 				fromMonth={new Date()}
 				fromDate={new Date()}
@@ -52,6 +62,13 @@ function DateSelector({ settings, cabin, bookedDates }) {
 						bookedDates.some((date) => isSameDay(date, curDate)) // using date-fns methods
 				}
 			/>
+
+			<p className="flex justify-center">
+				<span className="text-base font-bold underline underline-offset-4 mr-2">
+					Please note:{' '}
+				</span>
+				The minimum stay for booking at this cabin is {minBookingLength} days.
+			</p>
 
 			<div className="flex items-center justify-between px-8 bg-accent-500 text-primary-800 h-[72px]">
 				<div className="flex items-baseline gap-6">
