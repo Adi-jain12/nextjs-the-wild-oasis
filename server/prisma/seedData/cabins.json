@@ -1,0 +1,74 @@
+[
+	{
+		"id": 1,
+		"created_at": "2024-08-01T12:00:00Z",
+		"name": "001",
+		"maxCapacity": 4,
+		"regularPrice": 1200,
+		"Discount": 40,
+		"description": "A sleek and modern room designed for ultimate relaxation, featuring a comfortable queen-sized bed, a private bathroom with a walk-in shower, and floor-to-ceiling windows offering panoramic views of the city. The room also includes a work desk and high-speed internet, making it perfect for business travelers."
+	},
+	{
+		"id": 2,
+		"created_at": "2024-08-02T14:30:00Z",
+		"name": "002",
+		"maxCapacity": 2,
+		"regularPrice": 900,
+		"Discount": 50,
+		"description": "A cozy room perfect for couples, featuring a queen-sized bed and a private balcony with a stunning mountain view. The room is equipped with modern amenities, ensuring a comfortable and memorable stay."
+	},
+	{
+		"id": 3,
+		"created_at": "2024-08-03T09:45:00Z",
+		"name": "003",
+		"maxCapacity": 6,
+		"regularPrice": 1500,
+		"Discount": 15,
+		"description": "An expansive family suite designed to accommodate up to six guests, offering a spacious living area, two bedrooms, and a fully equipped kitchenette. Ideal for longer stays and family vacations, this suite ensures a home-like experience with added luxury."
+	},
+	{
+		"id": 4,
+		"created_at": "2024-08-04T16:15:00Z",
+		"name": "004",
+		"maxCapacity": 3,
+		"regularPrice": 1100,
+		"Discount": 80,
+		"description": "A stylish single-room suite that blends modern design with comfort. Featuring a king-sized bed, a work desk, and a rain shower, this room is perfect for business travelers and solo adventurers seeking relaxation and convenience."
+	},
+	{
+		"id": 5,
+		"created_at": "2024-08-05T18:20:00Z",
+		"name": "005",
+		"maxCapacity": 4,
+		"regularPrice": 1300,
+		"Discount": 120,
+		"description": "This elegant suite offers a perfect blend of comfort and style, with a spacious living area, two queen-sized beds, and a large bathroom with a soaking tub. The room also boasts a beautiful garden view, providing a serene atmosphere."
+	},
+	{
+		"id": 6,
+		"created_at": "2024-08-06T11:10:00Z",
+		"name": "006",
+		"maxCapacity": 5,
+		"regularPrice": 1400,
+		"Discount": 10,
+		"description": "A luxurious penthouse suite with breathtaking views of the city skyline. The suite features a master bedroom, a large living area, a private terrace, and a Jacuzzi, offering an unparalleled level of comfort and privacy."
+	},
+	{
+		"id": 7,
+		"created_at": "2024-08-07T10:00:00Z",
+		"name": "007",
+		"maxCapacity": 3,
+		"regularPrice": 1000,
+		"Discount": 70,
+		"description": "A charming room with a rustic design, featuring wooden furnishings, a fireplace, and a comfortable king-sized bed. The room offers a cozy atmosphere, perfect for those seeking a peaceful retreat in the countryside."
+	},
+	{
+		"id": 8,
+		"created_at": "2024-08-08T13:45:00Z",
+		"name": "008",
+		"maxCapacity": 4,
+		"regularPrice": 1250,
+		"Discount": 90,
+		"description": "A contemporary suite with modern decor and amenities, including a large flat-screen TV, a minibar, and a spacious bathroom with a rain shower. This room is ideal for both business and leisure travelers, offering a comfortable and stylish stay."
+	}
+]
