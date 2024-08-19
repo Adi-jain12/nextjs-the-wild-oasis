@@ -21,10 +21,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
-app.get('/hello', (req, res) => {
-	res.send('Hi');
-});
-
 app.use('/api/v1/guest', guestRoutes);
 app.use('/api/v1/cabin', cabinRoutes);
 app.use('/api/v1/booking', bookingRoutes);

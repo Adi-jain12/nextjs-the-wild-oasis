@@ -1,5 +1,4 @@
 // import bg from '@/public/bg.png';
-// import Image from 'next/image';
 import Link from 'next/link';
 
 const Page = () => {

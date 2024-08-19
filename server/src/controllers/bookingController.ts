@@ -52,7 +52,7 @@ export const getBooking = async (
 			},
 		});
 
-		// console.log(bookings);
+	
 
 		res.json(bookings);
 	} catch (error) {

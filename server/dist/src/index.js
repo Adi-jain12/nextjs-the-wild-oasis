@@ -22,9 +22,6 @@ app.use((0, morgan_1.default)('common'));
 app.use(body_parser_1.default.json());
 app.use(body_parser_1.default.urlencoded({ extended: false }));
 app.use((0, cors_1.default)());
-app.get('/hello', (req, res) => {
-    res.send('Hi');
-});
 app.use('/api/v1/guest', guestRoutes_1.default);
 app.use('/api/v1/cabin', cabinRoutes_1.default);
 app.use('/api/v1/booking', bookingRoutes_1.default);

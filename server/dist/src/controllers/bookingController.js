@@ -54,7 +54,6 @@ const getBooking = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
                 id: Number(id),
             },
         });
-        // console.log(bookings);
         res.json(bookings);
     }
     catch (error) {
