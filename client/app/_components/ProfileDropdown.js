@@ -46,9 +46,10 @@ const ProfileDropdown = ({ session }) => {
 					</div>
 				) : (
 					// <div className="relative w-8 h-8"></div>
-					<Image
-						// className="h-8 rounded-full"
-						className="rounded-full h-full object-cover"
+					<img
+						src={session.user.image}
+						className="h-8 rounded-full"
+						// className="rounded-full h-full object-cover"
 						fill
 						alt="Profile photo"
 						referrerPolicy="no-referrer"

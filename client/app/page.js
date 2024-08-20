@@ -7,7 +7,7 @@ const Page = () => {
 			<Image
 				src="https://s3-wildoasis.s3.ap-south-1.amazonaws.com/bg.png"
 				fill
-				placeholder="blur"
+				// placeholder="blur"
 				quality={80}
 				className="object-cover object-top"
 				alt="Mountains and forests with two cabins"
