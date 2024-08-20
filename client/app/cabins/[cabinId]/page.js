@@ -3,16 +3,16 @@ import Spinner from '@/app/_components/Spinner';
 import TextExpander from '@/app/_components/TextExpander';
 import { getCabin, getCabins } from '@/app/_lib/api-client';
 import { EyeSlashIcon, MapPinIcon, UsersIcon } from '@heroicons/react/24/solid';
-// import Image from 'next/image';
+import Image from 'next/image';
 import { Suspense } from 'react';
 
-// export async function generateMetadata({ params }) {
-// 	const cabinData = await getCabin(params.cabinId);
+export async function generateMetadata({ params }) {
+	const cabinData = await getCabin(params.cabinId);
 
-// 	const { name } = cabinData;
+	const { name } = cabinData;
 
-// 	return { title: `Cabin ${name}` };
-// }
+	return { title: `Cabin ${name}` };
+}
 
 export async function generateStaticParams() {
 	const cabins = await getCabins();
@@ -28,8 +28,6 @@ export async function generateStaticParams() {
 
 const Page = async ({ params }) => {
 	const cabin = await getCabin(params.cabinId);
-
-	console.log(cabin);
 
 	const { name, maxCapacity, description, image } = cabin;
 

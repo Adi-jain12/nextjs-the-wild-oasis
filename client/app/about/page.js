@@ -36,7 +36,7 @@ const Page = () => {
 
 			<div className="col-span-2">
 				<Image
-					src="https://s3-wildoasis.s3.ap-south-1.amazonaws.com/about-1.png"
+					src="https://s3-wildoasis.s3.ap-south-1.amazonaws.com/about-1.jpg"
 					alt="Family sitting around a fire pit in front of cabin"
 					placeholder="blur"
 					quality={80}
@@ -45,7 +45,7 @@ const Page = () => {
 
 			<div className="relative aspect-square col-span-2">
 				<Image
-					src="https://s3-wildoasis.s3.ap-south-1.amazonaws.com/about-2.png"
+					src="https://s3-wildoasis.s3.ap-south-1.amazonaws.com/about-2.jpg"
 					alt="Family that manages The Wild Oasis"
 					placeholder="blur"
 					quality={80}
