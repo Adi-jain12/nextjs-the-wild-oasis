@@ -25,6 +25,7 @@ export const getAllBookings = async (
 				cabin: {
 					select: {
 						name: true,
+						image: true,
 					},
 				},
 			},
@@ -51,8 +52,6 @@ export const getBooking = async (
 				id: Number(id),
 			},
 		});
-
-	
 
 		res.json(bookings);
 	} catch (error) {

@@ -4,9 +4,9 @@ const nextConfig = {
 		remotePatterns: [
 			{
 				protocol: 'https',
-				hostname: 'fuwgcnygoktleltknymx.supabase.co',
+				hostname: 's3-wildoasis.s3.ap-south-1.amazonaws.com',
 				port: '',
-				pathname: '/storage/v1/object/public/cabins-images/**',
+				pathname: '/**',
 			},
 		],
 	},

@@ -31,6 +31,7 @@ const getAllBookings = (req, res) => __awaiter(void 0, void 0, void 0, function*
                 cabin: {
                     select: {
                         name: true,
+                        image: true,
                     },
                 },
             },

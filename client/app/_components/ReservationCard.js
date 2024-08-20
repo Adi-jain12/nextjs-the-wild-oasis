@@ -1,6 +1,6 @@
 import { PencilSquareIcon } from '@heroicons/react/24/solid';
 import { format, formatDistance, isPast, isToday, parseISO } from 'date-fns';
-// import Image from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import DeleteReservation from './DeleteReservation';
 
@@ -20,18 +20,18 @@ function ReservationCard({ booking, onDelete }) {
 		numGuests,
 		status,
 		created_at,
-		cabin: { name },
+		cabin: { name, image },
 	} = booking;
 
 	return (
 		<div className="flex border border-primary-800">
 			<div className="relative h-32 aspect-square">
-				{/* <Image
+				<Image
 					src={image}
 					alt={`Cabin ${name}`}
 					fill
 					className="object-cover border-r border-primary-800"
-				/> */}
+				/>
 			</div>
 
 			<div className="flex-grow px-6 py-3 flex flex-col">

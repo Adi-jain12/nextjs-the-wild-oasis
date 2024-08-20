@@ -1,5 +1,4 @@
-// import Image from "next/image";
-// import image1 from "@/public/about-1.jpg";
+import Image from 'next/image';
 
 export const metadata = {
 	title: 'About',
@@ -36,21 +35,21 @@ const Page = () => {
 			</div>
 
 			<div className="col-span-2">
-				{/* <Image
-          src={image1}
-          alt="Family sitting around a fire pit in front of cabin"
-          placeholder="blur"
-          quality={80}
-        /> */}
+				<Image
+					src="https://s3-wildoasis.s3.ap-south-1.amazonaws.com/about-1.png"
+					alt="Family sitting around a fire pit in front of cabin"
+					placeholder="blur"
+					quality={80}
+				/>
 			</div>
 
 			<div className="relative aspect-square col-span-2">
-				{/* <Image
-          src="/about-2.jpg"
-          alt="Family that manages The Wild Oasis"
-          fill
-          className="object-cover"
-        /> */}
+				<Image
+					src="https://s3-wildoasis.s3.ap-south-1.amazonaws.com/about-2.png"
+					alt="Family that manages The Wild Oasis"
+					placeholder="blur"
+					quality={80}
+				/>
 			</div>
 
 			<div className="col-span-3">

@@ -1,17 +1,17 @@
-// import bg from '@/public/bg.png';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Page = () => {
 	return (
 		<main className="mt-24">
-			{/* <Image
-				src={bg}
+			<Image
+				src="https://s3-wildoasis.s3.ap-south-1.amazonaws.com/bg.png"
 				fill
 				placeholder="blur"
 				quality={80}
 				className="object-cover object-top"
 				alt="Mountains and forests with two cabins"
-			/> */}
+			/>
 
 			<div className="relative z-10 text-center">
 				<h1 className="text-8xl text-primary-50 mb-10 tracking-tight font-normal">

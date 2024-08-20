@@ -4,8 +4,7 @@ import { Menu } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import SignOutButton from './SignOutButton';
-// import userImage from '../../public/user.png';
-// import Image from 'next/image';
+import Image from 'next/image';
 
 const ProfileDropdown = ({ session }) => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -38,12 +37,12 @@ const ProfileDropdown = ({ session }) => {
 				<Menu className="text-black ml-1" />
 				{!session ? (
 					<div className="relative w-8 h-8">
-						{/* <Image
-							src={userImage}
+						<Image
+							src="https://s3-wildoasis.s3.ap-south-1.amazonaws.com/user.png"
 							fill
 							className="rounded-full h-full object-cover"
 							alt="Profile photo"
-						/> */}
+						/>
 					</div>
 				) : (
 					<div className="relative w-8 h-8"></div>
