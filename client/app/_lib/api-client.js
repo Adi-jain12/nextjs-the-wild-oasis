@@ -29,7 +29,11 @@ export async function getCabins() {
 export async function getGuest(email) {
 	try {
 		const response = await fetch(
-			`${API_BASE_URL}/api/v1/guest?email=${encodeURIComponent(email)}`
+			`${API_BASE_URL}/api/v1/guest?email=${encodeURIComponent(email)}`,
+			{
+				method: 'GET',
+				credentials: 'include',
+			}
 		);
 
 		if (!response.ok) {
