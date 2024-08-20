@@ -3,13 +3,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 function CabinCard({ cabin }) {
-	const { id, name, maxCapacity, regularPrice, Discount } = cabin;
+	const { id, name, maxCapacity, regularPrice, Discount, image } = cabin;
 
 	return (
 		<div className="flex border-primary-800 border">
 			<div className="flex-1 relative">
 				<Image
-					src="https://s3-wildoasis.s3.ap-south-1.amazonaws.com/bg.png/cabin-001.jpg"
+					src={image}
 					fill
 					alt={`Cabin ${name}`}
 					className="object-cover border-r border-primary-800"
@@ -40,7 +40,7 @@ function CabinCard({ cabin }) {
 								</span>
 							</>
 						) : (
-							<span className="text-3xl font-[350]">${regularPrice}</span>
+							<span className="text-3xl font-[350]">₹{regularPrice}</span>
 						)}
 						<span className="text-primary-200">/ night</span>
 					</p>

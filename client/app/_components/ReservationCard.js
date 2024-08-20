@@ -20,14 +20,14 @@ function ReservationCard({ booking, onDelete }) {
 		numGuests,
 		status,
 		created_at,
-		cabin: { name },
+		cabin: { name, image },
 	} = booking;
 
 	return (
 		<div className="flex border border-primary-800">
 			<div className="relative h-32 aspect-square">
 				<Image
-					src="https://s3-wildoasis.s3.ap-south-1.amazonaws.com/cabin-001.jpg"
+					src={image}
 					alt={`Cabin ${name}`}
 					fill
 					className="object-cover border-r border-primary-800"

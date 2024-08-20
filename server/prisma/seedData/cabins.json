@@ -6,7 +6,8 @@
 		"maxCapacity": 4,
 		"regularPrice": 1200,
 		"Discount": 40,
-		"description": "A sleek and modern room designed for ultimate relaxation, featuring a comfortable queen-sized bed, a private bathroom with a walk-in shower, and floor-to-ceiling windows offering panoramic views of the city. The room also includes a work desk and high-speed internet, making it perfect for business travelers."
+		"description": "A sleek and modern room designed for ultimate relaxation, featuring a comfortable queen-sized bed, a private bathroom with a walk-in shower, and floor-to-ceiling windows offering panoramic views of the city. The room also includes a work desk and high-speed internet, making it perfect for business travelers.",
+		"image": "https://s3-wildoasis.s3.ap-south-1.amazonaws.com/cabin-001.jpg"
 	},
 	{
 		"id": 2,
@@ -15,7 +16,8 @@
 		"maxCapacity": 2,
 		"regularPrice": 900,
 		"Discount": 50,
-		"description": "A cozy room perfect for couples, featuring a queen-sized bed and a private balcony with a stunning mountain view. The room is equipped with modern amenities, ensuring a comfortable and memorable stay."
+		"description": "A cozy room perfect for couples, featuring a queen-sized bed and a private balcony with a stunning mountain view. The room is equipped with modern amenities, ensuring a comfortable and memorable stay.",
+		"image": "https://s3-wildoasis.s3.ap-south-1.amazonaws.com/cabin-002.jpg"
 	},
 	{
 		"id": 3,
@@ -24,7 +26,8 @@
 		"maxCapacity": 6,
 		"regularPrice": 1500,
 		"Discount": 15,
-		"description": "An expansive family suite designed to accommodate up to six guests, offering a spacious living area, two bedrooms, and a fully equipped kitchenette. Ideal for longer stays and family vacations, this suite ensures a home-like experience with added luxury."
+		"description": "An expansive family suite designed to accommodate up to six guests, offering a spacious living area, two bedrooms, and a fully equipped kitchenette. Ideal for longer stays and family vacations, this suite ensures a home-like experience with added luxury.",
+		"image": "https://s3-wildoasis.s3.ap-south-1.amazonaws.com/cabin-003.jpg"
 	},
 	{
 		"id": 4,
@@ -33,7 +36,8 @@
 		"maxCapacity": 3,
 		"regularPrice": 1100,
 		"Discount": 80,
-		"description": "A stylish single-room suite that blends modern design with comfort. Featuring a king-sized bed, a work desk, and a rain shower, this room is perfect for business travelers and solo adventurers seeking relaxation and convenience."
+		"description": "A stylish single-room suite that blends modern design with comfort. Featuring a king-sized bed, a work desk, and a rain shower, this room is perfect for business travelers and solo adventurers seeking relaxation and convenience.",
+		"image": "https://s3-wildoasis.s3.ap-south-1.amazonaws.com/cabin-004.jpg"
 	},
 	{
 		"id": 5,
@@ -42,7 +46,8 @@
 		"maxCapacity": 4,
 		"regularPrice": 1300,
 		"Discount": 120,
-		"description": "This elegant suite offers a perfect blend of comfort and style, with a spacious living area, two queen-sized beds, and a large bathroom with a soaking tub. The room also boasts a beautiful garden view, providing a serene atmosphere."
+		"description": "This elegant suite offers a perfect blend of comfort and style, with a spacious living area, two queen-sized beds, and a large bathroom with a soaking tub. The room also boasts a beautiful garden view, providing a serene atmosphere.",
+		"image": "https://s3-wildoasis.s3.ap-south-1.amazonaws.com/cabin-005.jpg"
 	},
 	{
 		"id": 6,
@@ -51,7 +56,8 @@
 		"maxCapacity": 5,
 		"regularPrice": 1400,
 		"Discount": 10,
-		"description": "A luxurious penthouse suite with breathtaking views of the city skyline. The suite features a master bedroom, a large living area, a private terrace, and a Jacuzzi, offering an unparalleled level of comfort and privacy."
+		"description": "A luxurious penthouse suite with breathtaking views of the city skyline. The suite features a master bedroom, a large living area, a private terrace, and a Jacuzzi, offering an unparalleled level of comfort and privacy.",
+		"image": "https://s3-wildoasis.s3.ap-south-1.amazonaws.com/cabin-006.jpg"
 	},
 	{
 		"id": 7,
@@ -60,7 +66,8 @@
 		"maxCapacity": 3,
 		"regularPrice": 1000,
 		"Discount": 70,
-		"description": "A charming room with a rustic design, featuring wooden furnishings, a fireplace, and a comfortable king-sized bed. The room offers a cozy atmosphere, perfect for those seeking a peaceful retreat in the countryside."
+		"description": "A charming room with a rustic design, featuring wooden furnishings, a fireplace, and a comfortable king-sized bed. The room offers a cozy atmosphere, perfect for those seeking a peaceful retreat in the countryside.",
+		"image": "https://s3-wildoasis.s3.ap-south-1.amazonaws.com/cabin-007.jpg"
 	},
 	{
 		"id": 8,
@@ -69,6 +76,7 @@
 		"maxCapacity": 4,
 		"regularPrice": 1250,
 		"Discount": 90,
-		"description": "A contemporary suite with modern decor and amenities, including a large flat-screen TV, a minibar, and a spacious bathroom with a rain shower. This room is ideal for both business and leisure travelers, offering a comfortable and stylish stay."
+		"description": "A contemporary suite with modern decor and amenities, including a large flat-screen TV, a minibar, and a spacious bathroom with a rain shower. This room is ideal for both business and leisure travelers, offering a comfortable and stylish stay.",
+		"image": "https://s3-wildoasis.s3.ap-south-1.amazonaws.com/cabin-008.jpg"
 	}
 ]
