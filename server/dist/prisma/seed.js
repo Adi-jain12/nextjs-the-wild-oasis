@@ -22,7 +22,7 @@ function deleteAllData(orderedFileNames) {
             const modelName = path_1.default.basename(fileName, path_1.default.extname(fileName));
             return modelName.charAt(0).toUpperCase() + modelName.slice(1);
         });
-        for (const modelName of modelNames) {
+        for (const modelName of modelNames.reverse()) {
             const model = prisma[modelName];
             if (model) {
                 yield model.deleteMany({});
