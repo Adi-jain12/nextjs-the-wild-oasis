@@ -4,7 +4,7 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 export const getGuest = async (req: Request, res: Response): Promise<void> => {
-	const email = req.query.email as string | undefined;
+	const { email } = req.body;
 
 	try {
 		const guest = await prisma.guests.findUnique({

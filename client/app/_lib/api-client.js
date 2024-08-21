@@ -28,13 +28,14 @@ export async function getCabins() {
 
 export async function getGuest(email) {
 	try {
-		const response = await fetch(
-			`${API_BASE_URL}/api/v1/guest?email=${encodeURIComponent(email)}`,
-			{
-				method: 'GET',
-				credentials: 'include',
-			}
-		);
+		const response = await fetch(`${API_BASE_URL}/api/v1/guest/getGuest`, {
+			method: 'POST',
+			credentials: 'include',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({ email }),
+		});
 
 		if (!response.ok) {
 			throw new Error('Error fetching guest data');

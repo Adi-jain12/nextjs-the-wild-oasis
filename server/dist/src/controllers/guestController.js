@@ -13,7 +13,7 @@ exports.updateGuest = exports.createGuest = exports.getGuest = void 0;
 const client_1 = require("@prisma/client");
 const prisma = new client_1.PrismaClient();
 const getGuest = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const email = req.query.email;
+    const { email } = req.body;
     try {
         const guest = yield prisma.guests.findUnique({
             where: {

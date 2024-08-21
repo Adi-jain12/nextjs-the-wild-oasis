@@ -7,7 +7,7 @@ import {
 
 const router = Router();
 
-router.get('/', getGuest);
+router.post('/getGuest', getGuest);
 router.post('/', createGuest);
 router.patch('/:id', updateGuest);
 
