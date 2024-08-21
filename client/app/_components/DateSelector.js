@@ -63,7 +63,7 @@ function DateSelector({ settings, cabin, bookedDates }) {
 				}
 			/>
 
-			<p className="flex justify-center">
+			<p className="flex justify-center my-4">
 				<span className="text-base font-bold underline underline-offset-4 mr-2">
 					Please note:{' '}
 				</span>

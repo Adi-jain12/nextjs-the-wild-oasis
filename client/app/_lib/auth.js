@@ -37,8 +37,6 @@ const authConfig = {
 	pages: {
 		signIn: '/login',
 	},
-
-	debug: true,
 };
 
 export const {
