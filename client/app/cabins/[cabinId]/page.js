@@ -64,7 +64,7 @@ const Page = async ({ params }) => {
 							<MapPinIcon className="h-5 w-5 text-primary-600" />
 							<span className="text-lg">
 								Located in the heart of the{' '}
-								<span className="font-bold">Dolomites</span> (Italy)
+								<span className="font-bold">Himalayas</span> (India)
 							</span>
 						</li>
 						<li className="flex gap-3 items-center">
@@ -81,7 +81,7 @@ const Page = async ({ params }) => {
 				<h2 className="text-5xl font-semibold text-center mb-10 text-accent-400">
 					Reserve
 					<span className="text-accent-50 mx-3">{name}</span>
-					today. Pay on arrival.
+					today. And enjoy your stay!
 				</h2>
 
 				<Suspense fallback={<Spinner />}>
