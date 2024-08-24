@@ -4,6 +4,7 @@ CREATE TABLE "Guests" (
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "fullName" TEXT,
     "email" TEXT NOT NULL,
+    "password" TEXT,
     "nationality" TEXT,
     "countryFlag" TEXT,
     "national_id" TEXT,

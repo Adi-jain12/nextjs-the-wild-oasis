@@ -18,6 +18,7 @@ model Guests {
   created_at  DateTime   @default(now())
   fullName    String?
   email       String     @unique
+  password    String?
   nationality String?
   countryFlag String?
   national_id String?

@@ -131,7 +131,7 @@ export async function updateBooking(formData) {
 }
 
 export const signInAction = async () => {
-	await signIn('google', { redirectTo: '/' });
+	await signIn('google', { redirectTo: '/account' });
 };
 
 export const signOutAction = async () => {

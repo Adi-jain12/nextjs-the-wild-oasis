@@ -13,6 +13,7 @@ const guestRoutes_1 = __importDefault(require("./routes/guestRoutes"));
 const settingsRoutes_1 = __importDefault(require("./routes/settingsRoutes"));
 const bookingRoutes_1 = __importDefault(require("./routes/bookingRoutes"));
 const cabinRoutes_1 = __importDefault(require("./routes/cabinRoutes"));
+const auth_1 = __importDefault(require("./routes/auth"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
@@ -26,6 +27,7 @@ app.use('/api/v1/guest', guestRoutes_1.default);
 app.use('/api/v1/cabin', cabinRoutes_1.default);
 app.use('/api/v1/booking', bookingRoutes_1.default);
 app.use('/api/v1/settings', settingsRoutes_1.default);
+app.use('/api/v1/auth', auth_1.default);
 const port = Number(process.env.PORT) || 3001;
 app.listen(port, '0.0.0.0', () => {
     console.log(`Server running on port ${port}`);

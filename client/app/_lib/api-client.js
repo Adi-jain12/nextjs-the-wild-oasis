@@ -48,6 +48,50 @@ export async function getGuest(email) {
 	}
 }
 
+export async function signInCredentials(userCredentials) {
+	try {
+		const response = await fetch(`${API_BASE_URL}/api/v1/auth/signin`, {
+			method: 'POST',
+			credentials: 'include',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(userCredentials),
+		});
+
+		if (!response.ok) {
+			throw new Error('Error fetching user data');
+		}
+
+		const data = await response.json();
+		return data;
+	} catch (error) {
+		console.error(error);
+	}
+}
+
+export async function signUpCredentials(userCredentials) {
+	try {
+		const response = await fetch(`${API_BASE_URL}/api/v1/auth/signup`, {
+			method: 'POST',
+			credentials: 'include',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(userCredentials),
+		});
+
+		if (!response.ok) {
+			throw new Error('Error creating user');
+		}
+
+		const data = await response.json();
+		return data;
+	} catch (error) {
+		console.error(error);
+	}
+}
+
 export async function getBookings(id) {
 	try {
 		const response = await fetch(

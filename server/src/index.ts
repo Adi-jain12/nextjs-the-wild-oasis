@@ -8,6 +8,7 @@ import guestRoutes from './routes/guestRoutes';
 import settingsRoutes from './routes/settingsRoutes';
 import bookingRoutes from './routes/bookingRoutes';
 import cabinRoutes from './routes/cabinRoutes';
+import auth from './routes/auth';
 
 dotenv.config();
 
@@ -25,6 +26,7 @@ app.use('/api/v1/guest', guestRoutes);
 app.use('/api/v1/cabin', cabinRoutes);
 app.use('/api/v1/booking', bookingRoutes);
 app.use('/api/v1/settings', settingsRoutes);
+app.use('/api/v1/auth', auth);
 
 const port = Number(process.env.PORT) || 3001;
 
